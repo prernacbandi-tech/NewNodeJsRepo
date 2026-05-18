@@ -10,21 +10,21 @@ stages {
             checkout scm
         }
     }
-    stage("Install") {
-        steps {
-            bat "npm install"
-        }
-    }
-    stage("Build") {
-        steps {
-            bat "npm build"
-        }
-    }
-    stage("Test") {
-        steps {
-            bat "npm test"
-        }
-    }
+    // stage("Install") {
+    //     steps {
+    //         bat "npm install"
+    //     }
+    // }
+    // stage("Build") {
+    //     steps {
+    //         bat "npm build"
+    //     }
+    // }
+    // stage("Test") {
+    //     steps {
+    //         bat "npm test"
+    //     }
+    // }
     stage("Execute") {
         steps {
             bat "node First.js"
